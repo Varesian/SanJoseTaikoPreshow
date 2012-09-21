@@ -22,7 +22,6 @@ public class Resizer : MonoBehaviour {
 	void Update () {
 		timer += Time.deltaTime;
 		if (timer > secsUntilRescales[rescaleIndex]) {
-			Debug.Log ("Resize!");
 			rescaleIndex++;
 			transform.localScale = initialScale * scaleFactors[rescaleIndex];
 			transform.localPosition = centers[rescaleIndex];
@@ -30,7 +29,6 @@ public class Resizer : MonoBehaviour {
 	}
 	
 	public void Reset() {
-		Debug.Log ("RESETTING!!!");
 		rescaleIndex = 0;
 		timer = 0;
 		transform.localScale = initialScale * scaleFactors[0];

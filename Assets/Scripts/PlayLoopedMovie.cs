@@ -20,7 +20,6 @@ public class PlayLoopedMovie : MonoBehaviour {
 			movieTexture.Stop ();
 			movieTexture.Play ();
 			resizer.Reset();
-			Debug.Log ("Sending reset message!!");
 		}
 		
 	}
